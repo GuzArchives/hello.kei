@@ -1,0 +1,15 @@
+{
+	"editor.formatOnSave": true,
+	"editor.quickSuggestions": {
+		"strings": "on"
+	},
+	"css.validate": false,
+	"cSpell.words": [
+		"headlessui",
+		"supabase",
+		"Twemoji",
+		"Unplugin",
+		"windi",
+		"windicss"
+	]
+}

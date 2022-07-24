@@ -1,0 +1,10 @@
+{
+	"semi": true,
+	"useTabs": true,
+	"singleQuote": true,
+	"jsxSingleQuote": true,
+	"bracketSameLine": false,
+	"endOfLine": "crlf",
+	"quoteProps": "consistent",
+	"printWidth": 80
+}
