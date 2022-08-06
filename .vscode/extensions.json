@@ -1,9 +1,0 @@
-{
-	"recommendations": [
-		"editorconfig.editorconfig",
-		"dbaeumer.vscode-eslint",
-		"esbenp.prettier-vscode",
-		"voorjaar.windicss-intellisense",
-		"Vue.volar"
-	]
-}

@@ -1,42 +1,27 @@
-# Nuxt 3 Minimal Starter
+# Next.js + Tailwind CSS Example
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
 
-## Setup
+## Deploy your own
 
-Make sure to install the dependencies:
+Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
 
-```bash
-# yarn
-yarn install
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
 
-# npm
-npm install
+## How to use
 
-# pnpm
-pnpm install --shamefully-hoist
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
+Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
 
 ```bash
-npm run dev
+npx create-next-app --example with-tailwindcss with-tailwindcss-app
 ```
-
-## Production
-
-Build the application for production:
 
 ```bash
-npm run build
+yarn create next-app --example with-tailwindcss with-tailwindcss-app
 ```
-
-Locally preview production build:
 
 ```bash
-npm run preview
+pnpm create next-app --example with-tailwindcss with-tailwindcss-app
 ```
 
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
