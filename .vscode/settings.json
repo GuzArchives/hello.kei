@@ -1,0 +1,13 @@
+{
+	"editor.quickSuggestions": {
+		"strings": "on"
+	},
+	"cSpell.words": [
+		"Mantine",
+		"tabler",
+		"Windi",
+		"windicss"
+	],
+	"editor.tabCompletion": "on",
+	"diffEditor.codeLens": true
+}
