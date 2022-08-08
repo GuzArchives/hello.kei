@@ -9,4 +9,7 @@ module.exports = withPWA({
 		config.plugins.push(new WindiCSS());
 		return config;
 	},
+	pwa: {
+		dest: 'public',
+	}
 });
