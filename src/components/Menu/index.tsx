@@ -1,19 +1,23 @@
-import { IconMenu2, IconColorSwatch } from '@tabler/icons';
+import {
+	IconMenu2,
+	IconColorSwatch,
+	IconVolume,
+	IconVolume2,
+	IconVolume3,
+} from '@tabler/icons';
 import { Menu as M, ActionIcon, Popover } from '@mantine/core';
 import { useState } from 'react';
-import { useSound } from 'use-sound';
 import { SwitchTheme } from '~components/MantineUI';
+import useSfx from '~hooks/useSfx';
 
 import SchemePicker from './SchemePicker';
-export { SchemePicker };
+import VolumePicker from './VolumePicker';
+export { SchemePicker, VolumePicker };
 
 export default function Menu() {
 	const [opened, setOpened] = useState(false);
 
-	const [play] = useSound('/sounds/click.wav', {
-		format: ['wav'],
-		volume: 0.3,
-	});
+	const { play, volume } = useSfx('click.wav');
 
 	const playClick = (high: boolean) =>
 		play({ playbackRate: (high ? 3 : 1) + Math.random() });
@@ -37,6 +41,7 @@ export default function Menu() {
 
 			<M.Dropdown>
 				<M.Label>Menu</M.Label>
+
 				<M.Item icon={<SwitchTheme onChange={playClick} />}>
 					<p>Tema escuro</p>
 				</M.Item>
@@ -49,6 +54,22 @@ export default function Menu() {
 							<SchemePicker />
 						</Popover.Dropdown>
 					</Popover>
+				</M.Item>
+
+				<M.Divider />
+
+				<M.Item
+					icon={
+						volume == 0 ? (
+							<IconVolume3 />
+						) : volume < 0.3 ? (
+							<IconVolume2 />
+						) : (
+							<IconVolume />
+						)
+					}
+				>
+					<VolumePicker />
 				</M.Item>
 			</M.Dropdown>
 		</M>

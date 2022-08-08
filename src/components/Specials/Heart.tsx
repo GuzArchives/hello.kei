@@ -1,12 +1,9 @@
 import { IconHeart } from '@tabler/icons';
 import { motion } from 'framer-motion';
-import useSound from 'use-sound';
+import useSfx from '~hooks/useSfx';
 
 export default function Heart() {
-	const [play] = useSound('/sounds/heartbeat.wav', {
-		format: ['wav'],
-		volume: 0.3,
-	});
+	const { play } = useSfx('heartbeat.wav');
 
 	return (
 		<motion.div

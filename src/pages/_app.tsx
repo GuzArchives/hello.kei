@@ -33,7 +33,7 @@ export default function App(props: AppProps) {
 	return (
 		<>
 			<Head>
-				<title>Page title</title>
+				<title>Hello.Kei</title>
 				<meta
 					name='viewport'
 					content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover'

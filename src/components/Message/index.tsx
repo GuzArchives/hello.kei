@@ -1,8 +1,8 @@
 import { Text } from '@mantine/core';
 import { ReactNode, useEffect } from 'react';
 import { motion, HTMLMotionProps, useAnimationControls } from 'framer-motion';
-import useSound from 'use-sound';
 import { Heart } from '~components/Specials';
+import useSfx from '~hooks/useSfx';
 
 import Handler from './Handler';
 export { Handler };
@@ -39,8 +39,7 @@ export default function Message({
 
 	const animControls = useAnimationControls();
 
-	const [play] = useSound('/sounds/message_pop.wav', {
-		format: ['wav'],
+	const { play } = useSfx('message_pop.wav', {
 		sprite: {
 			pop0: [0, 300],
 			pop1: [600, 300],
@@ -48,7 +47,6 @@ export default function Message({
 			pop3: [1850, 300],
 			pop4: [2600, 300],
 		},
-		volume: 0.3,
 	});
 
 	useEffect(() => {
