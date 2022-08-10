@@ -1,27 +1,35 @@
-# Next.js + Tailwind CSS Example
+# Hello.Kei
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+> This is a personal project made for testing, experimentation, _and a gift to
+> someone_ :black_heart:.
 
-## Deploy your own
+## About
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+A small Progressive Web Application (PWA) made for experimenting and learning
+concepts like User Interface (UI) and User Experience (UX). \*Created as a personal
+side project in my free time, ~~don't expect a fully scalable application or
+commits conventions in general~~.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+Most of the application's content is private, so in this repository, there is just
+the source code for handling the interface.
 
-## How to use
+## Main Stack
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+- Framework: [Next.js](https://nextjs.org) ([React](https://reactjs.org))
+- Database: [Supabase](https://supabase.io)
+- Interface:
+  - Components: [Mantine](https://mantine.dev)
+  - Styling/Composing: [WindiCSS](https://windicss.org)
+  - Icons: [Tabler](https://tabler-icons.io)
+  - Custom Animations: [Framer Motion](https://framer.com/motion/)
+- Hosting: [Vercel](https://vercel.com)
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-```
+> This stack is chosen with the idea of trying to create a working application as 
+> _fast and easy as possible_. And personal choice.
 
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+---
 
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
+### License
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+Licensed under the BSD 3-Clause License. See [LICENSE](LICENSE) for details.
+
